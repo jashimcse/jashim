@@ -1,0 +1,386 @@
+@charset "UTF-8";
+h1 { text-align: center; font-family: "Raleway", sans-serif; font-weight: 700; line-height: 1.2; text-transform: uppercase; text-shadow: 4px 5px 10px rgba(0, 0, 0, 0.6); color: #ffffff; font-size: 44px; letter-spacing: -1.19px; }
+
+h2 { color: #424242; font-family: "Raleway", sans-serif; line-height: 1.2; font-size: 30px; font-weight: 700; text-transform: uppercase; letter-spacing: 15.94px; }
+
+h3 { text-align: center; font-family: "Raleway", sans-serif; font-weight: 700; line-height: 1.2; text-transform: uppercase; font-size: 25px; }
+
+h4 { color: #424242; font-family: "Raleway", sans-serif; font-size: 20px; line-height: 1.2; font-weight: 300; text-transform: uppercase; }
+
+h6 { font-size: 18px; font-weight: 400; line-height: 1.2; line-height: 24px; font-family: "Raleway", sans-serif; font-weight: 700; text-transform: uppercase; }
+
+.after { position: absolute; content: " "; display: block; left: 0; top: 0; }
+
+.mb-30 { margin-bottom: 30px; }
+
+.custom-btn { color: white; font-family: "Raleway", sans-serif; background-color: #424242; font-size: 15px; font-weight: 700; letter-spacing: -0.36px; padding: 10px 40px; text-align: center; border: none; box-shadow: none; outline: none; border-radius: 0; }
+.custom-btn:hover, .custom-btn:focus, .custom-btn:active { border: none; box-shadow: none; outline: none; color: white; background-color: #FEB34C; }
+
+.heading-section { text-align: center; padding: 95px 0; }
+.heading-section .common-title h2 { padding-bottom: 10px; }
+.heading-section .common-title h2:before { content: ""; width: 7px; height: 8px; background-color: #aca186; border-radius: 50%; display: inline-block; margin: 0 19px 7px 0; }
+.heading-section .common-title h2:after { content: ""; width: 7px; height: 8px; background-color: #aca186; border-radius: 50%; display: inline-block; margin: 0 19px 7px 0; }
+
+.mt-300 { margin-top: -300px; }
+
+.overlay-border { background-origin: content-box; border: 1px solid white; content: ''; padding: 30px; background-origin: content-box; position: absolute; left: 50px; top: 40px; bottom: 40px; right: 50px; z-index: 1; }
+
+.title { position: relative; padding: 0 22px; max-width: 215px; }
+.title:before { content: ''; width: 8px; height: 8px; background-color: #0093ad; position: absolute; left: 0; bottom: 15px; border-radius: 100%; }
+.title:after { content: ''; width: 8px; height: 8px; background-color: #0093ad; position: absolute; right: 0; bottom: 15px; border-radius: 100%; }
+
+.top-title { background-color: white; max-width: 576px; margin: 0 auto; text-align: center; }
+.top-title img { margin: 0 auto 26px auto; }
+.top-title .title { max-width: 305px; margin: 0 auto; }
+.top-title h2 { margin-bottom: 20px !important; }
+
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span { margin-top: -12px; }
+
+body .ui-datepicker .ui-datepicker-prev, body .ui-datepicker .ui-datepicker-next { width: 2.6em; }
+
+body .ui-datepicker .ui-datepicker-prev span.ui-icon.ui-icon-circle-triangle-w, body .ui-datepicker .ui-datepicker-next span.ui-icon.ui-icon-circle-triangle-e { background: none; overflow: visible; text-indent: 0; width: initial; left: 30%; }
+
+/* Slider */
+.slick-slider { position: relative; display: block; box-sizing: border-box; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }
+
+.slick-list { position: relative; overflow: hidden; display: block; margin: 0; padding: 0; }
+.slick-list:focus { outline: none; }
+.slick-list.dragging { cursor: pointer; cursor: hand; }
+
+.slick-slider .slick-track, .slick-slider .slick-list { -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); -o-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
+
+.slick-track { position: relative; left: 0; top: 0; display: block; margin-left: auto; margin-right: auto; }
+.slick-track:before, .slick-track:after { content: ""; display: table; }
+.slick-track:after { clear: both; }
+.slick-loading .slick-track { visibility: hidden; }
+
+.slick-slide { float: left; height: 100%; min-height: 1px; display: none; }
+[dir="rtl"] .slick-slide { float: right; }
+.slick-slide img { display: block; }
+.slick-slide.slick-loading img { display: none; }
+.slick-slide.dragging img { pointer-events: none; }
+.slick-initialized .slick-slide { display: block; }
+.slick-loading .slick-slide { visibility: hidden; }
+.slick-vertical .slick-slide { display: block; height: auto; border: 1px solid transparent; }
+
+.slick-arrow.slick-hidden { display: none; }
+
+/* Slider */
+.slick-loading .slick-list { background: #fff url("./ajax-loader.gif") center center no-repeat; }
+
+/* Icons */
+@font-face { font-family: "slick"; src: url("./fonts/slick.eot"); src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg"); font-weight: normal; font-style: normal; }
+/* Arrows */
+.slick-prev, .slick-next { position: absolute; display: block; height: 20px; width: 20px; line-height: 0px; font-size: 0px; cursor: pointer; background: transparent; color: transparent; top: 50%; -webkit-transform: translate(0, -50%); -ms-transform: translate(0, -50%); transform: translate(0, -50%); padding: 0; border: none; outline: none; }
+.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus { outline: none; background: transparent; color: transparent; }
+.slick-prev:hover:before, .slick-prev:focus:before, .slick-next:hover:before, .slick-next:focus:before { opacity: 1; }
+.slick-prev.slick-disabled:before, .slick-next.slick-disabled:before { opacity: 0.25; }
+.slick-prev:before, .slick-next:before { font-family: "slick"; font-size: 20px; line-height: 1; color: white; opacity: 0.75; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+.slick-prev { left: -100px; }
+[dir="rtl"] .slick-prev { left: auto; right: -100px; }
+.slick-prev:before { content: "<"; }
+[dir="rtl"] .slick-prev:before { content: ">"; }
+
+.slick-next { right: -100px; }
+[dir="rtl"] .slick-next { left: -100px; right: auto; }
+.slick-next:before { content: ">"; }
+[dir="rtl"] .slick-next:before { content: "<"; }
+
+/* Dots */
+.slick-dotted.slick-slider { margin-bottom: 30px; }
+
+.slick-dots { position: absolute; bottom: -25px; list-style: none; display: block; text-align: center; padding: 0; margin: 0; width: 100%; }
+.slick-dots li { position: relative; display: inline-block; height: 20px; width: 20px; margin: 0 5px; padding: 0; cursor: pointer; }
+.slick-dots li button { border: 0; background: transparent; display: block; height: 20px; width: 20px; outline: none; line-height: 0px; font-size: 0px; color: transparent; padding: 5px; cursor: pointer; }
+.slick-dots li button:hover, .slick-dots li button:focus { outline: none; }
+.slick-dots li button:hover:before, .slick-dots li button:focus:before { opacity: 1; }
+.slick-dots li button:before { position: absolute; top: 0; left: 0; content: "•"; width: 20px; height: 20px; font-family: "slick"; font-size: 6px; line-height: 20px; text-align: center; color: black; opacity: 0.25; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.slick-dots li.slick-active button:before { color: black; opacity: 0.75; }
+
+html, body { height: 100%; position: relative; }
+
+html { overflow-y: scroll; }
+
+body { min-width: 200px; font-size: 17px; font-family: "Adamina", serif; line-height: 1.5; font-weight: 400; font-style: normal; }
+
+a { cursor: pointer; color: #424242; text-decoration: none; font-style: normal; }
+
+a:hover, a:focus, a:active { text-decoration: none; font-style: normal; outline: none; }
+
+img { border: 0; vertical-align: middle; }
+
+ul, ol { list-style-position: inside; list-style-type: none; }
+
+img { max-width: 100%; }
+
+/* ========================================================================= > header start ========================================================================== */
+.header { position: relative; padding: 23px 0 20px 0; background-color: white; }
+.header .header-logo { text-align: center; }
+.header .header-logo img { max-width: 15%; display: block; margin: 0 auto; }
+.header .social-media { margin-top: -70px; font-family: "Raleway", sans-serif; }
+.header .social-media li a { padding: 12px 7px; font-size: 17px; }
+.header .social-media li a:hover, .header .social-media li a:focus, .header .social-media li a:active { color: #FEB34C; }
+.header .social-media li span { color: #979797; }
+.header .social-media .dropdown a span { color: #aca186; }
+
+.header2 .graylogo { margin-bottom: -40px; }
+.header2 .header-logo img { max-width: 50%; }
+.header2 .social-media { margin-top: 30px; }
+
+/* ========================================================================= > hotel START ========================================================================== */
+.hotel { overflow: hidden; outline: none; position: relative; padding: 96px 0; background-color: #fafafa; }
+.hotel img { z-index: 1; }
+.hotel .hotel-slide { min-height: 387px; background-repeat: no-repeat; background-position: center; background-size: cover; }
+.hotel .hotel-caption { max-width: 517px; background-color: white; padding: 72px 87px 40px 72px; }
+.hotel .hotel-caption h2, .hotel .hotel-caption p { margin-bottom: 20px; }
+.hotel .hotel-slider { position: relative; }
+.hotel .hotel-slider .slider { width: 100%; }
+.hotel .hotel-slider .slick-slide { transition: all ease-in-out .3s; opacity: 1; outline: none; }
+.hotel .hotel-slider .slick-current, .hotel .hotel-slider .slick-active { opacity: 1; }
+.hotel .hotel-slider .slick-dots { position: absolute; top: 80%; right: 0%; width: auto; }
+.hotel .hotel-slider .slick-dots li { width: 15px; }
+.hotel .hotel-slider .slick-dots li button:before { position: absolute; top: 0; left: 0; content: " "; font-size: 6px; line-height: 20px; text-align: center; color: black; opacity: 1; border-radius: 50%; width: 10px; height: 10px; transform: rotate(90deg); border: 1px solid #0093ad; }
+.hotel .hotel-slider .slick-dots li.slick-active button:before { color: #0093ad; opacity: 1; background-color: #0093ad; }
+
+/* ========================================================================= > header nav ========================================================================== */
+.prenota { position: relative; background-color: #424242; margin-top: -1px; }
+.prenota h4 { color: white; font-family: "Raleway", sans-serif; font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: -0.36px; }
+
+/* ========================================================================= > le-suite start ========================================================================== */
+.le-suite { position: relative; overflow: hidden; padding: 66px 0 40px 0; background-color: white; }
+.le-suite .top-title { margin-bottom: 50px; }
+.le-suite .overlay-border { opacity: 0; z-index: -1; }
+.le-suite .center { min-height: 450px; }
+.le-suite .single-slide { max-width: 1170px; min-height: 388px; background-size: cover; background-position: center; background-repeat: no-repeat; position: relative; z-index: 1; margin: 0px 30px; }
+.le-suite .single-slide img { z-index: 1; }
+.le-suite .single-slide .slider { width: 100%; }
+.le-suite .slick-slide { opacity: 0.62; transition: all ease-in-out .3s; outline: none; min-height: 300px; margin-top: 40px; }
+.le-suite .slick-current, .le-suite .slick-active { opacity: 1; margin-top: 0; min-height: 388px; }
+.le-suite .slick-current .overlay-border, .le-suite .slick-active .overlay-border { opacity: .38; z-index: -1; }
+.le-suite .caption { max-width: 573px; margin: 0 auto; text-align: center; padding-top: 100px; color: white; }
+.le-suite .caption p { margin-bottom: 25px; }
+.le-suite .caption h2 { color: white; margin-bottom: 20px; }
+.le-suite .slick-dots { bottom: 0; max-width: 517px; margin: 0 auto; text-align: left; left: 0; right: 0; height: 30px; }
+.le-suite .slick-dots li { z-index: 1; min-width: 110px; height: 4px; background: #d8d8d8; margin: 0; border-color: #d8d8d8; }
+.le-suite .slick-dots li.slick-active { margin: 0; background: #0093ad; border-radius: 5px; min-height: 4px; }
+.le-suite .slick-dots li button::before { display: none; }
+
+/* ========================================================================= > header nav ========================================================================== */
+.ristorante { position: relative; padding: 96px 0; background-color: #fafafa; }
+.ristorante .content-box { padding: 84px 54px 84px 63px; }
+.ristorante .content-box .content-title { position: relative; }
+.ristorante .content-box .content-title:after { content: ''; position: absolute; right: 50px; background: url("../css/images/decoration.png") center no-repeat; background-size: auto; top: -6px; width: 120px; height: 50px; }
+.ristorante .content-box-2 .content-title { position: relative; }
+.ristorante .content-box-2 .content-title:after { content: ''; position: absolute; right: 40%; }
+
+/* ========================================================================= > aspettiamo start ========================================================================== */
+.aspettiamo { position: relative; padding: 100px 0 88px 0; }
+.aspettiamo .top-title { margin-bottom: 51px; }
+.aspettiamo .top-title .title { max-width: 490px; margin: 0 auto; }
+.aspettiamo .custom-btn { height: 43px; padding: 6px 12px; }
+
+/* ========================================================================= > contact-form nav ========================================================================== */
+.contact-form { max-width: 518px; margin: 0 auto; }
+.contact-form .form-control { box-shadow: none; border: none; border-bottom: 1px solid #b4b5b4; border-radius: 0; color: #0093ad; font-family: "Raleway", sans-serif; font-size: 16px; }
+.contact-form select.form-control { -webkit-appearance: none; -moz-appearance: none; appearance: none; background: url("../css/images/caret.png") no-repeat 100% 12px; }
+.contact-form ::placeholder { color: #0093ad; }
+.contact-form ::-webkit-input-placeholder { color: #0093ad; }
+.contact-form ::-moz-placeholder { color: #0093ad; }
+.contact-form img.ui-datepicker-trigger { position: absolute; top: 7px; right: 22px; }
+
+/* ========================================================================= > contact info ========================================================================== */
+.contact-info { position: relative; padding: 50px 0; background-color: #fafafa; border-bottom: 6px solid #0093ad; }
+.contact-info .info-box { max-width: 320px; margin: 0 auto; }
+.contact-info .info-box ul { margin: 0; padding: 0; text-align: center; }
+.contact-info .info-box h4 { color: #424242; font-family: "Raleway", sans-serif; font-size: 16px; font-weight: 700; text-transform: uppercase; margin-bottom: 24px; }
+.contact-info .info-box .custom-btn { max-width: 174px; margin: 0 auto; text-align: center; display: inline-block; padding: 6px 12px; }
+
+/* ========================================================================= >slider start ========================================================================== */
+.slider { position: relative; }
+.slider .custom-slider-box { margin-top: 60px; }
+.slider .carousel-caption { position: absolute; right: 15%; bottom: 10%; z-index: 10; color: white; text-align: center; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
+.slider .carousel-caption img { height: auto; max-width: 15%; margin: 0 auto; }
+.slider .carousel-caption .cc-inner { margin-bottom: 80px; }
+.slider .carousel-caption .cc-inner .cc-middle { padding: 10px 0; margin: 0 auto; max-width: 550px; }
+.slider .carousel-indicators { position: absolute; bottom: 10px; left: 3%; z-index: 15; width: 60%; padding-left: 0; margin-left: -30%; text-align: center; list-style: none; }
+.slider .item { background-color: #424242; }
+.slider .item img { min-height: auto; }
+.slider .item .carousel-caption h2 { padding-bottom: 55px; font-size: 76px !important; color: white; }
+.slider .arrow { content: ''; position: absolute; left: 50%; bottom: 0; top: 85%; width: 100%; height: 100%; display: block; }
+
+/* ========================================================================= >palazzi-brand start ========================================================================== */
+.palazzi-brand { overflow: hidden; outline: none; min-height: 796px; background-color: #FAFAFA; }
+.palazzi-brand .heading-section { padding: 100px 0; }
+.palazzi-brand .palazzi-brand-slider .single-slide { margin-left: 0 !important; outline: none; }
+.palazzi-brand .palazzi-brand-slider .slider { width: 100%; }
+.palazzi-brand .palazzi-brand-slider .slick-slide { transition: all ease-in-out .3s; opacity: 1; outline: none !important; }
+.palazzi-brand .palazzi-brand-slider .slick-current, .palazzi-brand .palazzi-brand-slider .slick-active { opacity: 1; }
+.palazzi-brand .palazzi-brand-slider .slick-dots { position: absolute; top: 106%; right: 0; width: auto; bottom: 0%; left: 0; width: auto; }
+.palazzi-brand .palazzi-brand-slider .slick-dots li { width: 15px; }
+.palazzi-brand .palazzi-brand-slider .slick-dots li button:before { position: absolute; top: 0; left: 0; content: " "; font-size: 6px; line-height: 20px; text-align: center; color: black; opacity: 1; border-radius: 50%; width: 10px; height: 10px; transform: rotate(90deg); border: 1px solid #424242; opacity: .5; }
+.palazzi-brand .palazzi-brand-slider .slick-dots li.slick-active button:before { color: #0093ad; opacity: 1; background-color: #424242; }
+.palazzi-brand .single-box { box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); background-color: white; }
+.palazzi-brand .single-box:hover p { display: none; transition: 2s; }
+.palazzi-brand .single-box .up-section img { width: 100%; height: auto; }
+.palazzi-brand .single-box .up-section p { background-color: #aca186; opacity: 0.85; font-size: 14px; font-weight: 700; letter-spacing: -0.34px; text-align: center; margin-bottom: -20px; color: white; transition: 2s; }
+.palazzi-brand .single-box .buttom-section { text-align: center; padding-top: 37px; }
+.palazzi-brand .single-box .buttom-section img { max-width: 100%; height: auto; display: block; margin: 0 auto; }
+.palazzi-brand .single-box .buttom-section h4 { color: #0093ad; font-family: "Raleway", sans-serif; font-size: 20px; font-weight: 300; text-transform: uppercase; margin-top: 45px; border-bottom: solid 1px #0093ad; line-height: 0.6; }
+.palazzi-brand .single-box .buttom-section { text-align: center; padding-top: 37px; }
+.palazzi-brand .single-box .buttom-section img { max-width: 100%; height: auto; display: block; margin: 0 auto; }
+.palazzi-brand .single-box .buttom-section h4 { color: #0093ad; font-family: "Raleway", sans-serif; font-size: 20px; font-weight: 300; text-transform: uppercase; margin-top: 45px; border-bottom: solid 1px #0093ad; line-height: 0.6; }
+.palazzi-brand .single-box .buttom-section { text-align: center; padding-top: 17px; }
+.palazzi-brand .single-box .buttom-section img { max-width: 100%; height: auto; display: block; margin: 0 auto; }
+.palazzi-brand .single-box .buttom-section h4 { color: #0093ad; font-family: "Raleway", sans-serif; font-size: 20px; font-weight: 300; text-transform: uppercase; margin-top: 45px; border-bottom: solid 1px #0093ad; line-height: 0.6; }
+.palazzi-brand .single-box .buttom-section1 { text-align: center; padding-top: 37px; }
+.palazzi-brand .single-box .buttom-section1 img { max-width: 100%; height: auto; display: block; margin: 0 auto; }
+.palazzi-brand .single-box .buttom-section1 h4 { color: #951423; font-family: "Raleway", sans-serif; font-size: 20px; font-weight: 300; text-transform: uppercase; border-bottom: solid 1px #951423; line-height: 0.6; margin-top: 45px; }
+.palazzi-brand .single-box .buttom-section2 { text-align: center; padding-top: 37px; }
+.palazzi-brand .single-box .buttom-section2 img { max-width: 100%; height: auto; display: block; margin: 0 auto; }
+.palazzi-brand .single-box .buttom-section2 h4 { border-bottom: solid 1px #feb34c; line-height: 0.6; margin-top: 45px; color: #feb34c; font-family: "Raleway", sans-serif; font-size: 20px; font-weight: 300; text-transform: uppercase; }
+.palazzi-brand .single-box .buttom-section3 { text-align: center; padding-top: 37px; }
+.palazzi-brand .single-box .buttom-section3 img { max-width: 100%; height: auto; display: block; margin: 0 auto; }
+.palazzi-brand .single-box .buttom-section3 h4 { border-bottom: solid 1px #b49d70; line-height: 0.6; margin-top: 45px; color: #b49d70; font-family: "Raleway", sans-serif; font-size: 20px; font-weight: 300; text-transform: uppercase; }
+
+/* ========================================================================= > historic start ========================================================================== */
+.historic { min-height: 421px; color: white; }
+.historic .content-box-historic { max-width: 567px; margin: 0 auto; color: #424242; }
+.historic h2 { letter-spacing: 15.94px; line-height: 1.5; }
+
+/* ========================================================================= > resta start ========================================================================== */
+.resta { color: white; }
+.resta .resta-bg-image { background: url("../css/images/newsletter@2x.jpg") no-repeat; min-height: 388px; }
+.resta .top-box { max-width: 490px; margin: 0 auto 28px auto; text-align: center; color: white; }
+.resta .top-box h3 { margin-bottom: 20px; }
+.resta .form-group { width: 100%; }
+.resta .form-box { max-width: 370px; margin: 0 auto; }
+.resta .form-box .custom-btn { padding: 6px 12px; }
+.resta .form-box .form-control { background-color: transparent; border: none; border-bottom: 1px solid white; box-shadow: none; border-radius: 0; color: white; font-family: "Raleway", sans-serif; font-weight: 300; padding-left: 0; width: 81%; }
+.resta .form-box ::placeholder { color: white; }
+.resta .form-box ::-webkit-input-placeholder { color: white; }
+.resta .form-box ::-moz-placeholder { color: white; }
+.resta .form-box .image-box { max-width: 88%; height: 323px; margin: 0 auto; border: solid 1px rgba(255, 255, 255, 0.3); }
+.resta .form-box .image-box .content-contect { max-width: 51%; margin: 0 auto; padding: 20px 10px; color: white; }
+.resta .form-box .image-box .form-resta { padding: 20px 10px; color: white; margin: 0 auto; display: table; }
+.resta .form-box h5 { color: white; font-size: 11px; font-family: "Raleway", sans-serif; font-weight: 300; }
+.resta .form-box .checkbox { color: white; font-size: 11px; font-family: "Raleway", sans-serif; font-weight: 300; opacity: .7; }
+.resta .form-box input[type=checkbox], .resta .form-box input[type=radio] { margin-right: 15px; vertical-align: text-bottom; font-weight: 300; color: white; font-size: 11px; font-family: "Raleway", sans-serif; }
+.resta .form-box label { color: #ffffff; font-family: "Raleway", sans-serif; font-size: 11px; font-weight: 300; }
+.resta .form-box label a { color: white; text-decoration: underline; margin-left: 5px; font-weight: 300; }
+
+/* ========================================================================= > ti-aspettiamo start ========================================================================== */
+.ti-aspettiamo { min-height: 300px; background-color: #FAFAFA; }
+.ti-aspettiamo .content-box-ti { max-width: 567px; margin: 0 auto; }
+.ti-aspettiamo .contact-info { padding: 30px 0 25px 0; border: none; }
+.ti-aspettiamo .contact-info h6 { margin-bottom: 25px; }
+
+/* ========================================================================= > footer start ========================================================================== */
+.footer { position: relative; background-color: #414141; padding: 30px 0; color: white; }
+.footer .list-inline { padding: 0; margin: 0; }
+.footer .footer-logo { display: inline-block; float: left; position: relative; width: 40px; }
+.footer .footer-logo img { max-width: 35%; }
+.footer .address { padding-top: 8px; display: inline-block; max-width: 70%; text-align: left; position: relative; }
+.footer .address:before { content: ''; position: absolute; background: white; width: 2px; height: 33px; left: 0; top: 10px; opacity: .4; }
+.footer .address p { color: #b4b5b4; font-family: "Raleway", sans-serif; font-size: 12px; font-weight: 500; padding-left: 25px; }
+.footer .footer-menu { padding: 15px 0; }
+.footer .footer-menu ul > li { padding-left: 15px; padding-right: 15px; position: relative; }
+.footer .footer-menu ul > li span { vertical-align: middle; }
+.footer .footer-menu ul > li a { color: white; font-family: "Raleway", sans-serif; font-size: 12px; font-weight: 500; text-decoration: underline; text-transform: uppercase; }
+.footer .footer-menu ul > li a:hover, .footer .footer-menu ul > li a:focus, .footer .footer-menu ul > li a:active { color: #FEB34C; }
+
+/* ========================================================================= > footer2 nav ========================================================================== */
+.footer-2 .footer-logo { width: 155px !important; }
+.footer-2 .footer-logo img { max-width: 70%; }
+
+/* Extra Small */
+@media (max-width: 767px) { .header .header-logo img { max-width: 30%; }
+  .slider .item > img { min-height: 576px; }
+  .ristorante .content-box { padding: 29px 17px 40px 17px; }
+  .ristorante .content-box .content-title:after { right: 8px; top: -16px; }
+  .ristorante .content-box-2 .content-title:after { right: 25%; top: -25px; }
+  .ristorante .content-box .content-title { font-size: 24px; letter-spacing: 12.75px; }
+  .top-title h2 { font-size: 24px; letter-spacing: 8.94px; }
+  .top-title { max-width: 270px; }
+  .top-title .title:before { left: 90px; bottom: 38px; }
+  .top-title .title:after { bottom: 10px; }
+  .mt-300 { margin-top: -19px; }
+  .hotel .hotel-caption { padding: 33px 58px 49px 17px; margin-left: -13px; max-width: 338px; }
+  .hotel .hotel-slider .slick-dots { position: absolute; top: 36%; right: 0; width: auto; left: -28%; }
+  .hotel .hotel-slider .slick-dots li button:before { border: 1px solid white; }
+  .hotel .hotel-slider .slick-dots li.slick-active button:before { color: white; opacity: 1; background-color: white; }
+  .contact-info .info-box ul li:first-child { margin-bottom: 20px; }
+  .contact-info .info-box h4 { max-width: 185px; margin: 0 auto 24px auto; }
+  .le-suite .slick-dots { left: 7%; right: 10%; }
+  .le-suite .slick-dots li { min-width: 80px; }
+  .le-suite .caption h2 { font-size: 24px; letter-spacing: 5.94px; }
+  .le-suite .slick-current .overlay-border, .le-suite .slick-active .overlay-border { left: 15px; right: 15px; top: 15px; bottom: 15px; }
+  .le-suite .caption { width: 250px; padding-top: 60px; }
+  .le-suite .single-slide { margin-left: 0; }
+  .carousel-indicators li { padding: 10px; }
+  .slider .carousel-indicators { left: 0%; margin-left: 60%; top: 15px; width: 40%; }
+  .slider .item .carousel-caption h2 { padding-bottom: 50px; font-size: 28px !important; letter-spacing: 5px; }
+  .slider .carousel-caption h1 { font-size: 26px; }
+  .slider .carousel-caption img { max-width: 40%; }
+  .slider .arrow { content: ''; position: absolute; left: 40%; }
+  .slider .item .carousel-caption { bottom: 8%; }
+  .palazzi-brand .heading-section { padding: 30px 0; }
+  .palazzi-brand { min-height: 750px; }
+  .palazzi-brand .palazzi-brand-slider .single-slide { margin-left: 0 !important; outline: none; }
+  .palazzi-brand .palazzi-brand-slider .slick-slide { margin: 0 20px; }
+  .resta .form-box { text-align: left; }
+  .resta .form-box .custom-btn { position: absolute; bottom: 25px; }
+  .resta .form-box h5 { margin: 0; }
+  .common-title h2 { font-size: 24px; letter-spacing: 5px; }
+  .heading-section .common-title h2::before { margin: 0 19px 5px 0px; }
+  .heading-section .common-title h2::after { margin: 0 19px 5px 10px; }
+  .heading-section { padding: 36px 0; }
+  .resta .resta-bg-image { min-height: 480px; }
+  .resta .top-box h3 { font-size: 20px; }
+  .resta .form-box .form-control { margin-bottom: 7px; }
+  .footer .address { padding-top: 8px; max-width: 100%; }
+  .footer .address:before { display: none; }
+  .footer-2 .footer-logo img { margin: 0 auto; text-align: center; }
+  .footer-2 .footer-logo { width: 100% !important; }
+  .footer .list-inline { text-align: center; }
+  .footer .footer-menu ul > li { padding: 0 8px; }
+  .footer { text-align: center; }
+  .footer .footer-logo { display: block; float: none; text-align: center; margin: 0 auto; }
+  .footer .address { margin: 0 auto; text-align: center; }
+  .footer .footer-menu ul > li { padding: 0 4px; }
+  .footer .footer-logo img { max-width: 44%; margin: 0 auto; } }
+@media (max-width: 320px) { .common-title h2 { letter-spacing: 3px; }
+  .mt-300 { margin-top: 0; }
+  .ristorante .content-box { padding: 5px; }
+  .ristorante .content-box .content-title:after { right: -18px; top: -16px; }
+  .hotel .hotel-slider .slick-dots { position: absolute; top: 33%; right: 0; width: auto; left: -22%; }
+  .hotel .hotel-caption { margin: 0; }
+  .overlay-border { left: 30px; top: 30px; bottom: 30px; right: 30px; } }
+/* Small */
+@media (min-width: 768px) and (max-width: 991px) { .header2 .graylogo { display: none; }
+  .slider .item > img { min-height: 576px; }
+  .slider .item .carousel-caption { bottom: 5%; }
+  .slider .item .carousel-caption h2 { padding-bottom: 70px; font-size: 52px !important; letter-spacing: 10px; }
+  .ristorante .content-box .content-title:after { right: 40%; top: -16px; }
+  .ristorante .content-box-2 .content-title:after { right: 60%; top: -25px; }
+  .ristorante .content-box { padding: 45px 10px; }
+  .mt-300 { margin-top: -235px; }
+  .hotel .hotel-caption { max-width: 380px; padding: 30px; }
+  .slider .carousel-indicators { margin-left: -26%; }
+  .slider .carousel-caption img { max-width: 25%; }
+  .palazzi-brand .single-box .buttom-section img { max-width: 84%; }
+  .palazzi-brand .single-box .buttom-section3 img { max-width: 80%; }
+  .palazzi-brand .single-box .buttom-section2 img { max-width: 90%; } }
+/* Medium */
+@media (min-width: 992px) and (max-width: 1199px) { .ristorante .content-box .content-title:after { right: -7%; top: -12px; }
+  .ristorante .content-box-2 .content-title:after { right: 24%; top: -12px; }
+  .slider .item .carousel-caption h2 { padding-bottom: 33px; font-size: 56px !important; }
+  .slider .item .carousel-caption h1 { font-size: 30px; }
+  .slider .item .carousel-caption { bottom: 5%; }
+  .slider .item .carousel-caption h2 { padding-bottom: 70px; font-size: 52px !important; letter-spacing: 10px; }
+  .footer-2 .footer-logo { width: 135px !important; }
+  .footer-2 .footer-logo img { max-width: 80%; }
+  .footer .footer-menu ul > li { padding: 0 9px; } }
+/* Large */
+
+/*# sourceMappingURL=styles.css.map */
